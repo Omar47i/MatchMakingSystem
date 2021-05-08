@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414062f9d9180b24eb66136c31c0fe4c, type: 3}
+  m_Name: UISettings
+  m_EditorClassIdentifier: 
+  screens:
+  - ScreenId: MainMenu
+    Prefab: {fileID: 9145659904482332459, guid: 9ed36cfbb2d2b8244abdea214c682c1c,
+      type: 3}
+  - ScreenId: SettingsMenu
+    Prefab: {fileID: 2199508868223257566, guid: 4f91cff1068425542be716a727ea3475,
+      type: 3}
+  - ScreenId: Toast
+    Prefab: {fileID: 6503809418862776964, guid: aa275c3401d67524eb5df931aa66c727,
+      type: 3}
+  - ScreenId: PopupMesage
+    Prefab: {fileID: 5913809005403528958, guid: d455c950629b4144397256acbfa3b7a4,
+      type: 3}
+  - ScreenId: ProfilePanel
+    Prefab: {fileID: 8592568670634157000, guid: 2092da1ba85474b44a0e11b830068fcb,
+      type: 3}
+  - ScreenId: GameplayUI
+    Prefab: {fileID: 2267474212228944171, guid: bad80e2bbf6aded489d3ab9ae29c668c,
+      type: 3}
+  deactivateScreenGOs: 1

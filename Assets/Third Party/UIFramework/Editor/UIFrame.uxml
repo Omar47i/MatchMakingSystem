@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="container" style="flex-grow: 1; flex-shrink: 0; justify-content: flex-start;">
+        <Style src="UIFrame.uss" />
+        <uie:PropertyField binding-path="settings" label="UI Settings" />
+        <ui:Toggle label="InitializeOnAwake" binding-path="initializeOnAwake" value="true" />
+        <ui:VisualElement name="ruler" class="line" />
+        <ui:VisualElement name="CurrentScreenPanel" style="flex-grow: 0; flex-shrink: 1; flex-direction: row; justify-content: flex-start;">
+            <ui:Label text="Current Screen:" name="Label" style="font-size: 18px;" />
+            <ui:Label text="Settings" name="currentScreenlbl" binding-path="CurrentWindow" class="stack-item" style="font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ruler" class="line" />
+        <ui:Label text="Windows History Stack:" />
+        <ui:VisualElement style="flex-shrink: 0; flex-direction: row;">
+            <ui:VisualElement name="StackContainer" style="border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px; align-items: flex-start; flex-shrink: 0; flex-grow: 0; padding-left: 3px; padding-right: 3px; padding-top: 3px; padding-bottom: 3px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ruler" class="line" />
+        <ui:VisualElement class="line" style="margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; color: rgb(255, 0, 0); background-color: rgb(255, 0, 0); border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; display: none;" />
+        <ui:Label text="Windows Queue :" />
+        <ui:VisualElement name="QueueContainer" style="flex-grow: 0; flex-shrink: 0; flex-direction: row; display: flex; justify-content: flex-start; flex-wrap: wrap; margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; padding-left: 3px; padding-right: 3px; padding-top: 3px; padding-bottom: 3px;" />
+    </ui:VisualElement>
+</ui:UXML>
