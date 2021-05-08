@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 /**
  * <p>
  * Representation of a player.
@@ -13,15 +14,26 @@
  */
 public class Player
 {
+    private readonly string id;
     private readonly string name;
-    private readonly long wins;
-    private readonly long losses;
+    private readonly int wins;
+    private readonly int losses;
+    private readonly int winstreak;
+    private readonly int sr;
 
-    public Player(string name, long wins, long losses)
+    public Player(string id, string name, int wins, int losses, int winstreak, int sr)
     {
+        this.id = id;
         this.name = name;
         this.wins = wins;
         this.losses = losses;
+        this.winstreak = winstreak;
+        this.sr = sr;
+    }
+
+    public string GetID()
+    {
+        return id;
     }
 
     public string GetName()
@@ -37,5 +49,15 @@ public class Player
     public long GetLosses()
     {
         return losses;
+    }
+
+    public long GetWinStreak()
+    {
+        return winstreak;
+    }
+
+    public int GetSR()
+    {
+        return sr;
     }
 }

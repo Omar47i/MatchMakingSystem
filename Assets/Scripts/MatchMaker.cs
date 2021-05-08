@@ -2,19 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MatchmakerImpl : Matchmaker
+public class Matchmaker : IMatchmaker
 {
+    private TeamsBuilder teamsBuilder;
 
-    public Match FindMatch(int playersPerTeam)
+    public Matchmaker()
     {
-        // TODO be sure to implement this :D
-        return null;
+        teamsBuilder = new TeamsBuilder();
+    }
+
+    public Match FindMatch(GameMode gameMode)
+    {
+        return teamsBuilder.TryFindingMatch(gameMode);
     }
 
     // This is where player enters the matchmaking individually
-    public void EnterMatchmaking(Player player)
+    public void EnterMatchmaking(Player player, GameMode gameMode)
     {
-        // TODO and this
+        teamsBuilder.InsertPlayerInQueue(player, gameMode);
     }
 
 }

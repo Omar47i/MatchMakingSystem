@@ -1,0 +1,401 @@
+[
+    {
+        "id": "dcf2ae0c-afbf-11eb-8529-0242ac130003",
+        "name": "Kate Wells",
+        "wins": 961,
+        "losses": 658,
+        "win-streak": 4,
+        "SR": 6060
+    },
+    {
+        "id": "dcf2b0aa-afbf-11eb-8529-0242ac130003",
+        "name": "Kristine Newman",
+        "wins": 852,
+        "losses": 179,
+        "win-streak": 9,
+        "SR": 13460
+    },
+    {
+        "id": "dcf2b1c2-afbf-11eb-8529-0242ac130003",
+        "name": "Billie Roberts",
+        "wins": 942,
+        "losses": 951,
+        "win-streak": 13,
+        "SR": 6400
+    },
+    {
+        "id": "dcf2b2a8-afbf-11eb-8529-0242ac130003",
+        "name": "Ernestine Holloway",
+        "wins": 61,
+        "losses": 500,
+        "win-streak": 0,
+        "SR": 220
+    },
+    {
+        "id": "dcf2b37a-afbf-11eb-8529-0242ac130003",
+        "name": "Candace Reynolds",
+        "wins": 235,
+        "losses": 8,
+        "win-streak": 0,
+        "SR": 4540
+    },
+    {
+        "id": "dcf2b67c-afbf-11eb-8529-0242ac130003",
+        "name": "Susan Potter",
+        "wins": 234,
+        "losses": 486,
+        "win-streak": 3,
+        "SR": 1600
+    },
+    {
+        "id": "dcf2b74e-afbf-11eb-8529-0242ac130003",
+        "name": "Jessie Dawson",
+        "wins": 910,
+        "losses": 258,
+        "win-streak": 0,
+        "SR": 14005
+    },
+    {
+        "id": "dcf2b80c-afbf-11eb-8529-0242ac130003",
+        "name": "Clint Massey",
+        "wins": 647,
+        "losses": 310,
+        "win-streak": 5,
+        "SR": 6940
+    },
+    {
+        "id": "dcf2b8ca-afbf-11eb-8529-0242ac130003",
+        "name": "Pamela Gross",
+        "wins": 331,
+        "losses": 599,
+        "win-streak": 0,
+        "SR": 2660
+    },
+    {
+        "id": "dcf2b97e-afbf-11eb-8529-0242ac130003",
+        "name": "Roxanne Morrison",
+        "wins": 235,
+        "losses": 980,
+        "win-streak": 0,
+        "SR": 3960
+    },
+    {
+        "id": "dcf2ba32-afbf-11eb-8529-0242ac130003",
+        "name": "Marjorie Tyler",
+        "wins": 746,
+        "losses": 570,
+        "win-streak": 4,
+        "SR": 8920
+    },
+    {
+        "id": "dcf2bae6-afbf-11eb-8529-0242ac130003",
+        "name": "Jeanette Bass",
+        "wins": 909,
+        "losses": 612,
+        "win-streak": 0,
+        "SR": 14020
+    },
+    {
+        "id": "dcf2be24-afbf-11eb-8529-0242ac130003",
+        "name": "Guadalupe Saunders",
+        "wins": 820,
+        "losses": 430,
+        "win-streak": 2,
+        "SR": 10420
+    },
+    {
+        "id": "dcf2beec-afbf-11eb-8529-0242ac130003",
+        "name": "Laura Barton",
+        "wins": 908,
+        "losses": 422,
+        "win-streak": 3,
+        "SR": 14960
+    },
+    {
+        "id": "dcf2bfaa-afbf-11eb-8529-0242ac130003",
+        "name": "Simon Ingram",
+        "wins": 99,
+        "losses": 842,
+        "win-streak": 6,
+        "SR": 520
+    },
+    {
+        "id": "dcf2c05e-afbf-11eb-8529-0242ac130003",
+        "name": "Dewey Fitzgerald",
+        "wins": 3,
+        "losses": 328,
+        "win-streak": 0,
+        "SR": 19
+    },
+    {
+        "id": "dcf2c112-afbf-11eb-8529-0242ac130003",
+        "name": "Rickey Lindsey",
+        "wins": 665,
+        "losses": 181,
+        "win-streak": 7,
+        "SR": 8660
+    },
+    {
+        "id": "dcf2c1d0-afbf-11eb-8529-0242ac130003",
+        "name": "Harold Grant",
+        "wins": 820,
+        "losses": 70,
+        "win-streak": 2,
+        "SR": 15760
+    },
+    {
+        "id": "dcf2c284-afbf-11eb-8529-0242ac130003",
+        "name": "Irvin Moody",
+        "wins": 433,
+        "losses": 98,
+        "win-streak": 0,
+        "SR": 6520
+    },
+    {
+        "id": "dcf2c338-afbf-11eb-8529-0242ac130003",
+        "name": "Hannah Sullivan",
+        "wins": 0,
+        "losses": 499,
+        "win-streak": 0,
+        "SR": 0
+    },
+    {
+        "id": "dcf2c5ea-afbf-11eb-8529-0242ac130003",
+        "name": "Clark Jones",
+        "wins": 986,
+        "losses": 424,
+        "win-streak": 0,
+        "SR": 14199
+    },
+    {
+        "id": "dcf2c6b2-afbf-11eb-8529-0242ac130003",
+        "name": "Jamie Parks",
+        "wins": 371,
+        "losses": 215,
+        "win-streak": 0,
+        "SR": 3680
+    },
+    {
+        "id": "dcf2c766-afbf-11eb-8529-0242ac130003",
+        "name": "Sherri Thomas",
+        "wins": 266,
+        "losses": 33,
+        "win-streak": 12,
+        "SR": 4220
+    },
+    {
+        "id": "dcf2c824-afbf-11eb-8529-0242ac130003",
+        "name": "Constance Day",
+        "wins": 519,
+        "losses": 661,
+        "win-streak": 2,
+        "SR": 7760
+    },
+    {
+        "id": "dcf2c8ce-afbf-11eb-8529-0242ac130003",
+        "name": "Mae Mathis",
+        "wins": 919,
+        "losses": 165,
+        "win-streak": 0,
+        "SR": 15600
+    },
+    {
+        "id": "dcf2c982-afbf-11eb-8529-0242ac130003",
+        "name": "Pam Alexander",
+        "wins": 30,
+        "win-streak": 30,
+        "SR": 600
+    },
+    {
+        "id": "dcf2ca2c-afbf-11eb-8529-0242ac130003",
+        "name": "Fannie Rios",
+        "wins": 625,
+        "losses": 162,
+        "win-streak": 3,
+        "SR": 11420
+    },
+    {
+        "id": "dcf2ccac-afbf-11eb-8529-0242ac130003",
+        "name": "Darrell Howard",
+        "wins": 145,
+        "losses": 457,
+        "win-streak": 0,
+        "SR": 2240
+    },
+    {
+        "id": "dcf2cd6a-afbf-11eb-8529-0242ac130003",
+        "name": "Kathy Green",
+        "wins": 675,
+        "losses": 546,
+        "win-streak": 5,
+        "SR": 9860
+    },
+    {
+        "id": "dcf2ce1e-afbf-11eb-8529-0242ac130003",
+        "name": "Elisa Hunt",
+        "wins": 985,
+        "losses": 296,
+        "win-streak": 0,
+        "SR": 13200
+    },
+    {
+        "id": "dcf2ced2-afbf-11eb-8529-0242ac130003",
+        "name": "Ricardo Rivera",
+        "wins": 224,
+        "losses": 289,
+        "win-streak": 2,
+        "SR": 1788
+    },
+    {
+        "id": "dcf2cf86-afbf-11eb-8529-0242ac130003",
+        "name": "Karen Reese",
+        "wins": 641,
+        "losses": 660,
+        "win-streak": 7,
+        "SR": 9800
+    },
+    {
+        "id": "dcf2d03a-afbf-11eb-8529-0242ac130003",
+        "name": "Roderick Jimenez",
+        "wins": 754,
+        "losses": 378,
+        "win-streak": 3,
+        "SR": 12420
+    },
+    {
+        "id": "dcf2d0e4-afbf-11eb-8529-0242ac130003",
+        "name": "Abel Cruz",
+        "wins": 739,
+        "losses": 104,
+        "win-streak": 11,
+        "SR": 13080
+    },
+    {
+        "id": "dcf2d3fa-afbf-11eb-8529-0242ac130003",
+        "name": "Clay Adams",
+        "wins": 93,
+        "losses": 813,
+        "win-streak": 2,
+        "SR": 1580
+    },
+    {
+        "id": "dcf2d4b8-afbf-11eb-8529-0242ac130003",
+        "name": "Frank Nash",
+        "wins": 102,
+        "losses": 781,
+        "win-streak": 3,
+        "SR": 1421
+    },
+    {
+        "id": "dcf2d56c-afbf-11eb-8529-0242ac130003",
+        "name": "Jackie Allison",
+        "wins": 162,
+        "losses": 199,
+        "win-streak": 0,
+        "SR": 1621
+    },
+    {
+        "id": "dcf2d620-afbf-11eb-8529-0242ac130003",
+        "name": "Celia Garcia",
+        "wins": 485,
+        "losses": 918,
+        "win-streak": 4,
+        "SR": 8221
+    },
+    {
+        "id": "dcf2d6d4-afbf-11eb-8529-0242ac130003",
+        "name": "Sheldon Martin",
+        "wins": 104,
+        "losses": 29,
+        "win-streak": 0,
+        "SR": 1640
+    },
+    {
+        "id": "dcf2d792-afbf-11eb-8529-0242ac130003",
+        "name": "Rex Clarke",
+        "wins": 891,
+        "losses": 468,
+        "win-streak": 4,
+        "SR": 16200
+    },
+    {
+        "id": "dcf2d850-afbf-11eb-8529-0242ac130003",
+        "name": "Ross Castillo",
+        "wins": 229,
+        "losses": 230,
+        "win-streak": 2,
+        "SR": 2420
+    },
+    {
+        "id": "dcf2daf8-afbf-11eb-8529-0242ac130003",
+        "name": "Mathew Park",
+        "wins": 650,
+        "losses": 310,
+        "win-streak": 0,
+        "SR": 8500
+    },
+    {
+        "id": "dcf2dbb6-afbf-11eb-8529-0242ac130003",
+        "name": "Pat Allen",
+        "wins": 347,
+        "losses": 365,
+        "win-streak": 0,
+        "SR": 5020
+    },
+    {
+        "id": "dcf2dc74-afbf-11eb-8529-0242ac130003",
+        "name": "Luke Perkins",
+        "wins": 460,
+        "losses": 972,
+        "win-streak": 0,
+        "SR": 9000
+    },
+    {
+        "id": "dcf2dd28-afbf-11eb-8529-0242ac130003",
+        "name": "Kurt Obrien",
+        "wins": 733,
+        "losses": 760,
+        "win-streak": 2,
+        "SR": 12420
+    },
+    {
+        "id": "dcf2dddc-afbf-11eb-8529-0242ac130003",
+        "name": "Pedro Stokes",
+        "wins": 264,
+        "losses": 360,
+        "win-streak": 0,
+        "SR": 3980
+    },
+    {
+        "id": "dcf2de90-afbf-11eb-8529-0242ac130003",
+        "name": "Sophia Butler",
+        "wins": 976,
+        "losses": 376,
+        "win-streak": 4,
+        "SR": 15300
+    },
+    {
+        "id": "dcf2df3a-afbf-11eb-8529-0242ac130003",
+        "name": "Elaine Gregory",
+        "wins": 630,
+        "losses": 994,
+        "win-streak": 3,
+        "SR": 11780
+    },
+    {
+        "id": "dcf2dfee-afbf-11eb-8529-0242ac130003",
+        "name": "Eduardo Patrick",
+        "wins": 479,
+        "losses": 837,
+        "win-streak": 0,
+        "SR": 8220
+    },
+    {
+        "id": "dcf2e2d2-afbf-11eb-8529-0242ac130003",
+        "name": "James Drake",
+        "wins": 350,
+        "losses": 487,
+        "win-streak": 0,
+        "SR": 5960
+    }
+]

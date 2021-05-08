@@ -1,5 +1,5 @@
 
-public interface Matchmaker
+public interface IMatchmaker
 {
     /**
      * <p>
@@ -10,13 +10,13 @@ public interface Matchmaker
      *            the number of players required in each team
      * @return an appropriate match or null if there is no appropriate match
      */
-    Match FindMatch(int playersPerTeam);
+    Match FindMatch(GameMode gameMode);
 
     /**
      * <p>
      * Add a player for matching.
      * </p>
      */
-    void EnterMatchmaking(Player player);
+    void EnterMatchmaking(Player player, GameMode gameMode);
 
 }
