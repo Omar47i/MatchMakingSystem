@@ -1,2 +1,2 @@
 # MatchMakingSystem
-A balanced/fair match making system
+An implementation for a match making system
