@@ -29,7 +29,7 @@ public class UIController : MonoBehaviour
         matchmaker = GameManager.Instance.GetMatchMaker();
 
         // .. we need to know when the player is leaving the queue and entering a team to show the stats to the player
-        matchmaker.GetEnteringTeamEvent().AddListener(OnPlayerEnteringTeam);
+        matchmaker.GetEnteringTeamEvent().AddListener(OnPlayerLeavingQueue);
 
         InitializeUI();
     }
@@ -169,7 +169,7 @@ public class UIController : MonoBehaviour
         UpdateSelectedModeGfx();
     }
 
-    private void OnPlayerEnteringTeam(string id)
+    private void OnPlayerLeavingQueue(string id)
     {
         foreach (Transform tr in matchesViewParent[3])
         {
@@ -200,6 +200,6 @@ public class UIController : MonoBehaviour
 
     private void OnDestroy()
     {
-        matchmaker.GetEnteringTeamEvent().RemoveListener(OnPlayerEnteringTeam);
+        matchmaker.GetEnteringTeamEvent().RemoveListener(OnPlayerLeavingQueue);
     }
 }
