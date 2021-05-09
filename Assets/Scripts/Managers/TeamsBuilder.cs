@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TeamsBuilder
 {
@@ -12,6 +13,9 @@ public class TeamsBuilder
     Dictionary<GameMode, List<List<Player>>> playersInTeamsAndMatched = new Dictionary<GameMode, List<List<Player>>>();
 
     private GameMode activeMode;    // the mode that we are trying the matchmaking for
+
+    // .. Fired when a player is removed from the queue and found a team, or found a match in case of 1v1, used for UI stats 
+    public PlayerLeavingQueueBaseEvent PlayerLeavingQueueEvent = new PlayerLeavingQueueBaseEvent();
 
     public TeamsBuilder()
     {
@@ -73,6 +77,8 @@ public class TeamsBuilder
                     // we got a match, remove the matched players so that we don't include them in future match making
                     playersInQueue[GameMode.OneVOne].Remove(p1);
                     playersInQueue[GameMode.OneVOne].Remove(p2);
+                    PlayerLeavingQueueEvent.Invoke(p1.GetID());
+                    PlayerLeavingQueueEvent.Invoke(p2.GetID());
 
                     List<Player> players = new List<Player>();
                     players.Add(p1);
@@ -128,7 +134,8 @@ public class TeamsBuilder
                 {
                     // we got a match, create a team out of the two players and remove them from the queue
                     CreateTeam(p1, p2);
-
+                    PlayerLeavingQueueEvent.Invoke(p1.GetID());
+                    PlayerLeavingQueueEvent.Invoke(p2.GetID());
                     // return null as we don't have enough players yet to start a game
                     return null;
                 }
@@ -154,6 +161,7 @@ public class TeamsBuilder
                 // we got a match, add the player to the team and remove them from the queue
                 playersInTeams[j].Add(p);
                 playersInQueue[activeMode].Remove(p);
+                PlayerLeavingQueueEvent.Invoke(p.GetID());
                 playerInQueueCount--;
 
                 // .. we got a full match
@@ -238,3 +246,6 @@ public class TeamsBuilder
         return teamSR / players.Count;
     }
 }
+
+public class PlayerLeavingQueueBaseEvent : UnityEvent<string>
+{ }

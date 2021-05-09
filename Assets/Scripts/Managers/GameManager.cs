@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    [SerializeField] private int oneVoneThreshold = 250;
-    [SerializeField] private int twoVtwoThreshold = 250;
-    [SerializeField] private int threeVthreeThreshold = 250;
+    [SerializeField] private int OneVOneThreshold = 250;
+    [SerializeField] private int TwoVTwoThreshold = 250;
+    [SerializeField] private int ThreeVThreeThreshold = 250;
 
     private Matchmaker matchmaker;
 
@@ -26,11 +26,11 @@ public class GameManager : Singleton<GameManager>
     public int GetMatchingThreshold(GameMode gameMode)
     {
         if (gameMode == GameMode.OneVOne)
-            return oneVoneThreshold;
+            return OneVOneThreshold;
         else if (gameMode == GameMode.TwoVTwo)
-            return twoVtwoThreshold;
+            return TwoVTwoThreshold;
         else if (gameMode == GameMode.ThreeVThree)
-            return threeVthreeThreshold;
+            return ThreeVThreeThreshold;
         else
             return 0;
     }

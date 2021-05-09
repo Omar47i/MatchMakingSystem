@@ -22,4 +22,9 @@ public class Matchmaker : IMatchmaker
         teamsBuilder.InsertPlayerInQueue(player, gameMode);
     }
 
+    // return the even that will be fired as the player is removed from the queue
+    public PlayerLeavingQueueBaseEvent GetEnteringTeamEvent()
+    {
+        return teamsBuilder.PlayerLeavingQueueEvent;
+    }
 }
