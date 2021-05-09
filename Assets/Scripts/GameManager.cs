@@ -14,7 +14,7 @@ public class GameManager : Singleton<GameManager>
 
     private List<Player> players;          // contains all the players listed in the sample json
 
-    private void Start()
+    private void Awake()
     {
         matchmaker = new Matchmaker();
 
@@ -35,38 +35,15 @@ public class GameManager : Singleton<GameManager>
             return 0;
     }
 
-    //@Debug
-    public void OnAddPlayer()
+    // Return the players that have been read from the json sample
+    public List<Player> GetPlayersList()
     {
-        if (players.Count == 0)
-        {
-            print("no more players");
-            return;
-        }
-
-        Debug.Log(players[0].GetName() + " was added");
-
-        matchmaker.EnterMatchmaking(players[0], GameMode.ThreeVThree);
-
-        players.Remove(players[0]);
+        return players;
     }
 
-    //@Debug
-    public void OnAddAllPlayers()
+    public Matchmaker GetMatchMaker()
     {
-        if (players.Count == 0)
-        {
-            print("no more players");
-            return;
-        }
-
-        while (players.Count != 0)
-        {
-            matchmaker.EnterMatchmaking(players[0], GameMode.ThreeVThree);
-            Debug.Log(players[0].GetName() + " was added");
-
-            players.Remove(players[0]);
-        }
+        return matchmaker;
     }
 
     //@Debug

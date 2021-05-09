@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420030}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OnFindMatch
         m_Mode: 1
@@ -776,7 +776,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 816406576}
   m_HandleRect: {fileID: 816406575}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1088,7 +1088,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1104,21 +1103,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
---- !u!114 &519420030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfc64bf1699314f8fa72c35df003eee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  oneVoneThreshold: 800
-  twoVtwoThreshold: 750
-  threeVthreeThreshold: 2000
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1266,6 +1250,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540477454}
   m_CullTransparentMesh: 1
+--- !u!1 &563909535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 563909537}
+  - component: {fileID: 563909536}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &563909536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563909535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc64bf1699314f8fa72c35df003eee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oneVoneThreshold: 800
+  twoVtwoThreshold: 750
+  threeVthreeThreshold: 2000
+--- !u!4 &563909537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563909535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 896.4865, y: 71.10403, z: -161.6889}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &605183354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,9 +1379,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OnAddAllPlayers
+      - m_Target: {fileID: 1553973259}
+        m_TargetAssemblyTypeName: UIController, Scripts
+        m_MethodName: AddAllPlayers
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1482,9 +1512,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OnAddPlayer
+      - m_Target: {fileID: 1553973259}
+        m_TargetAssemblyTypeName: UIController, Scripts
+        m_MethodName: AddOnePlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2038,7 +2068,7 @@ GameObject:
   - component: {fileID: 941398970}
   - component: {fileID: 941398969}
   m_Layer: 5
-  m_Name: MatchesTitle (1)
+  m_Name: MatchesTitle2v2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2218,7 +2248,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2242,7 +2272,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 983015645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1553973259}
+        m_TargetAssemblyTypeName: UIController, Scripts
+        m_MethodName: OnChangeMode
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &983015645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2329,7 +2371,7 @@ GameObject:
   - component: {fileID: 1213078580}
   - component: {fileID: 1213078579}
   m_Layer: 5
-  m_Name: MatchesTitle
+  m_Name: MatchesTitle1v1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2463,7 +2505,7 @@ GameObject:
   - component: {fileID: 1228921698}
   - component: {fileID: 1228921697}
   m_Layer: 5
-  m_Name: MMStatus (1)
+  m_Name: AddedPlayersText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2706,7 +2748,7 @@ GameObject:
   - component: {fileID: 1262699947}
   - component: {fileID: 1262699946}
   m_Layer: 5
-  m_Name: 2v2ModeBtn
+  m_Name: 3v3ModeBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2751,7 +2793,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2775,7 +2817,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1262699947}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1553973259}
+        m_TargetAssemblyTypeName: UIController, Scripts
+        m_MethodName: OnChangeMode
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1262699947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3127,7 +3181,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3151,7 +3205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1489852254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1553973259}
+        m_TargetAssemblyTypeName: UIController, Scripts
+        m_MethodName: OnChangeMode
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1489852254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3349,7 +3415,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 747675224}
   m_HandleRect: {fileID: 747675223}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3405,6 +3471,7 @@ GameObject:
   - component: {fileID: 1553973257}
   - component: {fileID: 1553973256}
   - component: {fileID: 1553973255}
+  - component: {fileID: 1553973259}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3507,6 +3574,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1553973259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553973254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a539707a68064677821414302d7427b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedModeImages:
+  - {fileID: 1489852254}
+  - {fileID: 983015645}
+  - {fileID: 1262699947}
+  addedPlayersText: {fileID: 1228921697}
 --- !u!1 &1655173379
 GameObject:
   m_ObjectHideFlags: 0
@@ -3799,7 +3883,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420030}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OnFindMatchOnce
         m_Mode: 1
@@ -3931,7 +4015,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1689138520}
   m_HandleRect: {fileID: 1689138519}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4670,7 +4754,7 @@ GameObject:
   - component: {fileID: 2042231652}
   - component: {fileID: 2042231651}
   m_Layer: 5
-  m_Name: MatchesTitle (2)
+  m_Name: MatchesTitle3v3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
