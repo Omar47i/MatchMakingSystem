@@ -46,7 +46,7 @@ public class GameManager : Singleton<GameManager>
 
         Debug.Log(players[0].GetName() + " was added");
 
-        matchmaker.EnterMatchmaking(players[0], GameMode.ThreeVThree);
+        matchmaker.EnterMatchmaking(players[0], GameMode.OneVOne);
 
         players.Remove(players[0]);
     }
@@ -57,12 +57,13 @@ public class GameManager : Singleton<GameManager>
         if (players.Count == 0)
         {
             print("no more players");
+            //matchmaker.PrintRankedPlayers();
             return;
         }
 
         while (players.Count != 0)
         {
-            matchmaker.EnterMatchmaking(players[0], GameMode.ThreeVThree);
+            matchmaker.EnterMatchmaking(players[0], GameMode.OneVOne);
             Debug.Log(players[0].GetName() + " was added");
 
             players.Remove(players[0]);
@@ -72,7 +73,7 @@ public class GameManager : Singleton<GameManager>
     //@Debug
     public void OnFindMatchOnce()
     {
-        Match match = matchmaker.FindMatch(GameMode.ThreeVThree);
+        Match match = matchmaker.FindMatch(GameMode.OneVOne);
 
         if (match != null)
         {

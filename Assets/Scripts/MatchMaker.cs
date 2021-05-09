@@ -22,4 +22,9 @@ public class Matchmaker : IMatchmaker
         teamsBuilder.InsertPlayerInQueue(player, gameMode);
     }
 
+    //@Debug
+    public void PrintRankedPlayers()
+    {
+        teamsBuilder.PrintSortedPlayers();
+    }
 }
