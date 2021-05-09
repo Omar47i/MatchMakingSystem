@@ -3,10 +3,14 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 
+// This is script is responsible for showing players stats for testing purposes
+
 public class UIController : MonoBehaviour
 {
+    // references to players and matchmaker to show the stats as it changes
     private List<Player> players;
     private Matchmaker matchmaker;
+
     private int totalPlayersCount;
     private bool runFindMatch = false;       // if true, matchmaking will be trying to match players continuously
 
@@ -15,7 +19,7 @@ public class UIController : MonoBehaviour
 
     private GameMode selectedGameMode = GameMode.OneVOne;
 
-    // references to UI gameObjects that will populate the scene with stats texts about the match making system
+    // references to the UI gameObjects that will populate the scene with stats texts
     [SerializeField] Image[] selectedModeImages;
     [SerializeField] TMP_Text addedPlayersText;
     [SerializeField] TMP_Text matchmakerStatusText;
@@ -43,6 +47,7 @@ public class UIController : MonoBehaviour
         matchmakerStatusText.text = "Idle";
     }
 
+    // Add one player to the queue
     public void AddOnePlayer()
     {
         if (players.Count == 0)
@@ -63,6 +68,7 @@ public class UIController : MonoBehaviour
         UpdateAddedPlayers();
     }
 
+    // Add all players to the queue, with consideration of the currently selected mode
     public void AddAllPlayers()
     {
         if (players.Count == 0)
@@ -125,12 +131,14 @@ public class UIController : MonoBehaviour
         matchmakerStatusText.text = runFindMatch ? "Running" : "Idle";
     }
 
+    // Instantiate a UI item that will show the player and their SR waiting to be matched
     void CreatePlayerItemInQueue(Player player)
     {
         GameObject playerInQueueObj = Instantiate(matchItemPrefab, matchesViewParent[3]);
         playerInQueueObj.GetComponent<PlayerInQueueItem>().SetPlayer(player.GetName(), player.GetSR(), player.GetID());
     }
 
+    // Update the game modes button color, selected button is green and the others are white
     void UpdateSelectedModeGfx()
     {
         if (selectedGameMode == GameMode.OneVOne)
@@ -153,6 +161,7 @@ public class UIController : MonoBehaviour
         }
     }
 
+    // Update the text that shows the number of added players to the queue waiting to be matched
     void UpdateAddedPlayers()
     {
         int added = totalPlayersCount - players.Count;

@@ -7,22 +7,22 @@ public class SampleDataParser
 {
     private string jsonFileName = "sample-data";
 
-    private List<PlayerData> playerData;
+    private List<PlayerJsonData> playerData;
 
     public SampleDataParser()
     {
         // Load the sample data json file from Resources folder and deserialize it
         var jsonTextFile = Resources.Load<TextAsset>(jsonFileName);
 
-        playerData = JsonConvert.DeserializeObject<List<PlayerData>>(jsonTextFile.text);
+        playerData = JsonConvert.DeserializeObject<List<PlayerJsonData>>(jsonTextFile.text);
     }
 
-    public List<PlayerData> GetPlayerData()
+    public List<PlayerJsonData> GetPlayerData()
     {
         return playerData;
     }
 
-    public List<Player> PlayerDataToPlayers()
+    public List<Player> PlayerJsonDataToPlayers()
     {
         List<Player> players = new List<Player>();
 

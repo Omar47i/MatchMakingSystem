@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-public class PlayerData
+public class PlayerJsonData
 {
     [JsonProperty("id")]
     public string ID { get; set; }

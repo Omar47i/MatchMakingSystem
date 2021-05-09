@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    [SerializeField] private int OneVOneThreshold = 250;
-    [SerializeField] private int TwoVTwoThreshold = 250;
-    [SerializeField] private int ThreeVThreeThreshold = 250;
+    [SerializeField] private int OneVOneThreshold = 850;
+    [SerializeField] private int TwoVTwoThreshold = 850;
+    [SerializeField] private int ThreeVThreeThreshold = 850;
 
     private Matchmaker matchmaker;
 
@@ -16,13 +16,15 @@ public class GameManager : Singleton<GameManager>
 
     private void Awake()
     {
+        // The game manager is responsible for creating the match maker interface that will be used to try and match players together
         matchmaker = new Matchmaker();
 
         dataParser = new SampleDataParser();
 
-        players = dataParser.PlayerDataToPlayers();
+        players = dataParser.PlayerJsonDataToPlayers();
     }
 
+    // For each game mode, there is a threshold that when the sr difference is below it, then we can match the two players together
     public int GetMatchingThreshold(GameMode gameMode)
     {
         if (gameMode == GameMode.OneVOne)
@@ -44,54 +46,6 @@ public class GameManager : Singleton<GameManager>
     public Matchmaker GetMatchMaker()
     {
         return matchmaker;
-    }
-
-    //@Debug
-    public void OnFindMatchOnce()
-    {
-        Match match = matchmaker.FindMatch(GameMode.ThreeVThree);
-
-        if (match != null)
-        {
-            string team1 = "";
-            string team2 = "";
-
-            foreach (Player p in match.GetTeam1())
-            {
-                team1 += p.GetName() + ",";
-            }
-
-            foreach (Player p in match.GetTeam2())
-            {
-                team2 += p.GetName() + ",";
-            }
-
-            Debug.Log("matched " + team1 + " with " + team2);
-        }
-    }
-
-    //@Debug
-    bool runFindMatch = false;
-    float counter = 0f;
-    public void OnFindMatch()
-    {
-        runFindMatch = !runFindMatch;
-    }
-
-    //@Debug
-    private void Update()
-    {
-        if (runFindMatch)
-        {
-            if (counter <= 0)
-            {
-                OnFindMatchOnce();
-
-                counter += .2f;
-            }
-            else
-                counter -= Time.deltaTime;
-        }
     }
 }
 

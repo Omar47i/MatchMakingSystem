@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// A UI script that sets the UI item text to show players stats
 public class PlayerInQueueItem : MonoBehaviour
 {
     [SerializeField] TMP_Text text;
