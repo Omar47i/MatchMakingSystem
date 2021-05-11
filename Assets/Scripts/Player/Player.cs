@@ -20,6 +20,7 @@ public class Player
     private readonly int losses;
     private readonly int winstreak;
     private readonly int sr;
+    private bool isDirty = false;
 
     public Player(string id, string name, int wins, int losses, int winstreak, int sr)
     {
@@ -60,4 +61,10 @@ public class Player
     {
         return sr;
     }
+
+    public bool IsDirty() => isDirty;
+
+    public void SetDirty() => isDirty = true;
+
+    public void SetUnDirty() => isDirty = false;
 }
